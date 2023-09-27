@@ -1,24 +1,51 @@
 # fullstack-dockerized-example
 
-Infra consist of a backend, mongo database and a webserver, orchestrated by docker-compose, to launch it run:
-```./start```
-You can start/stop the infra by:
-````docker-compose up``
+This infrastructure consists of a backend, a MongoDB database, and a web server, orchestrated by docker-compose. To launch it, run:
+```bash 
+    ./start
+```
+You can start/stop the infrastructure with the following commands:
+```bash 
+    docker-compose up
+```
 or 
-````docker-compose down``
+```bash 
+    docker-compose down
+```
 
-WARINNG: Each time you put dependency at backend/package.json you should restart the infrastucture in order to install the module in the docker container.
+### WARNING
+Each time you add a dependency to **backend/package.json**, you should restart the infrastructure to install the module in the Docker container.
 
-For database GUI there is a service running at port ```8081``` which allows to visualize and operate with database in a userfriendly way. The website has basic auth and its credentials are configured in ```docker-compose.yml``` at ```ME_CONFIG_BASICAUTH_USERNAME``` and ```ME_CONFIG_BASICAUTH_PASSWORD```.
 
-Backend API can be accessed through: ```localhost/api/[...path]```
 
-Frontend runs by default at port ```3000``` and its started by going ```frontend/web``` and executing:
-- Development: ```yarn start``` or ```npm run start```
-- Production: ```yarn prod``` or ```npm run prod```
-If its first time run ```yarn``` or ```npm install``` as first command.
+For database GUI, there is a service running on port **`8081`**, allowing you to visualize and operate with the database in a user-friendly way. The website has basic authentication, and its credentials are configured in **`docker-compose.yml`** under **`ME_CONFIG_BASICAUTH_USERNAME`** and **`ME_CONFIG_BASICAUTH_PASSWORD`**.
 
-Working system specs: 
+The Backend API can be accessed at: 
+```bash 
+    localhost/api/[...path]
+```
+
+The frontend runs by default on port **`3000`**. To start it, navigate to **`frontend/web`** and execute the following commands:
+
+- Development
+```bash
+    yarn start
+``` 
+or 
+```bash 
+npm run start
+```
+- Production
+```bash
+yarn prod
+``` 
+or 
+```bash
+npm run prod
+```
+If its first time run **`yarn`** or **`npm install`** as first command.
+
+Working system specifications:
 - Node 20.4.0
 - Yarn 1.22.19
 - Docker version 24.0.5, build ced0996
