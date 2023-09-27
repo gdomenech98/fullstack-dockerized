@@ -6,8 +6,8 @@ import React from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'No queue',
-  description: 'Stop wasting time in queues and enjoy the moment!',
+  title: 'Example',
+  description: 'This is a example!',
 }
 
 export default function RootLayout({

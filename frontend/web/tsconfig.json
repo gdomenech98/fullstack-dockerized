@@ -21,6 +21,7 @@
     ],
     "paths": {
       "@components/*": ["./components/*"],
+      "@uikit/*": ["./components/uikit/*"],
       "@context/*": ["./context/*"],
       "@models/*": ["./models/*"],
       "@api/*": ["./api/*"],

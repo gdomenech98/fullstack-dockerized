@@ -16,7 +16,7 @@ Backend API can be accessed through: ```localhost/api/[...path]```
 Frontend runs by default at port ```3000``` and its started by going ```frontend/web``` and executing:
 - Development: ```yarn start``` or ```npm run start```
 - Production: ```yarn prod``` or ```npm run prod```
-
+If its first time run ```yarn``` or ```npm install``` as first command.
 
 Working system specs: 
 - Node 20.4.0
