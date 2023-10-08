@@ -51,7 +51,6 @@ Working system specifications:
 - Docker Compose version v2.19.1
 - OS: Ubuntu 22.04, uid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu), 1001(docker)
 
-### 🚨🚨🚨 CAUTION
+### ⚠️CAUTION⚠️
 The system works if its configured with user 1000 and docker its also added to user group. 
-See more at: https://docs.docker.com/engine/install/linux-postinstall/
-### 🚨🚨🚨 
+See more at: https://docs.docker.com/engine/install/linux-postinstall/ 
