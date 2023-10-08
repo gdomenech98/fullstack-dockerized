@@ -4,15 +4,15 @@ This is a full-stack project that enables fast infrastructure deployment for dev
 
 ## 🚀 Start project 🚀
 ```bash 
-    ./start
+./start
 ```
 You can start/stop the infrastructure with the following commands:
-```bash 
-    docker-compose up
+```bash
+docker-compose up
 ```
 or 
 ```bash 
-    docker-compose down
+docker-compose down
 ```
 ### 🚨🚨🚨WARNING🚨🚨🚨 each time you add a dependency to any of the services that use nodejs, as **backend**, you should restart the infrastructure to install the module in the **Docker container**.
 
